@@ -1,7 +1,7 @@
 import unittest
 from speech_to_text_request import SpeechToTextRequest
 
-# テストはパブリックとなっているメソッドのみテストしている。
+# テストはパブリックとなっているメソッドのみテストしています。
 class SpeechToTextRequestTest(unittest.TestCase):
     def setUp(self):
         test_audio_path = "audio/test-audio.flac"

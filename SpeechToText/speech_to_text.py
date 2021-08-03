@@ -2,6 +2,7 @@ from speech_to_text_request import SpeechToTextRequest
 from text_processer import TextProcessor
 from transcript_extractor import TranscriptExtractor
 
+#　このクラスはAPIを叩いたレスポンスを加工しそれを返す責務を持ちます。
 class SpeechToText:
     def __init__(self, *, audio_file_path ,search_words):
         self.audio_file_path = audio_file_path

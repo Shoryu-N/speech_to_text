@@ -3,10 +3,11 @@ import unittest
 from io import StringIO
 from text_processer import TextProcessor
 
-# テストはパブリックとなっているメソッドのみテストしている。
+# テストはパブリックとなっているメソッドのみテストしています。
 class TextProcessorTest(unittest.TestCase):
     def setUp(self):
-        search_words = ["音声", "a"]
+        # ""や" "はなにも表示されないのが予期している挙動
+        search_words = ["音声", "a", "", " "]
         text = "音声認識は、近年流行しているアプリケーションの一つだ。今回は、音声を入力し、それをテキストに変換する。"
         self.text_processer = TextProcessor(search_words=search_words, text=text)
         self.org_stdout, sys.stdout = sys.stdout, StringIO()

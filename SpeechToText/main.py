@@ -3,6 +3,8 @@ from speech_to_text import SpeechToText
 class NotFlacAudioError(Exception):
     pass
 
+# TODO: 検索ワードによって、何語かを判別し、叩くAPIをハンドリングする。
+# TODO: 現段階では結果をprintしているが、これをクライアントサイドにレスポンスとして返すようにする。
 def print_processed_speech_to_text():
     print("audio_fileの相対パスを入力してください")
     audio_file_path = input()
