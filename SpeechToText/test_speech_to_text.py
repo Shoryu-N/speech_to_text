@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import MagicMock
 from speech_to_text import SpeechToText
 from speech_to_text_request import SpeechToTextRequest
-from text_processer import TextProcessor
+from text_processor import TextProcessor
 from transcript_extractor import TranscriptExtractor
 
 # テストはパブリックとなっているメソッドのみテストしています。
@@ -19,12 +19,12 @@ class SpeechToTextTest(unittest.TestCase):
         assert speech_to_text_request.response.assert_called_once
 
     # 以下クラスをmockして必要なメソッドが呼ばれたかどうかをテストしています。
-    def test_call_text_processer(self):
-        speech_to_text_processer = TextProcessor(search_words=["test", "aaa"] ,text="aaa")
-        speech_to_text_processer.call = MagicMock()
+    def test_call_text_processor(self):
+        speech_to_text_processor = TextProcessor(search_words=["test", "aaa"] ,text="aaa")
+        speech_to_text_processor.call = MagicMock()
 
         self.speech_to_text.call()
-        assert speech_to_text_processer.call.assert_called_once
+        assert speech_to_text_processor.call.assert_called_once
 
     # 以下クラスをmockして必要なメソッドが呼ばれたかどうかをテストしています。
     def test_call_transcript_extractor(self):

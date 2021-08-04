@@ -1,5 +1,5 @@
 from speech_to_text_request import SpeechToTextRequest
-from text_processer import TextProcessor
+from text_processor import TextProcessor
 from transcript_extractor import TranscriptExtractor
 
 #　このクラスはAPIを叩いたレスポンスを加工しそれを返す責務を持ちます。

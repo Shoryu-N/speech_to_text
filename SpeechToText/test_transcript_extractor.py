@@ -2,7 +2,7 @@ import json
 import unittest
 from transcript_extractor import TranscriptExtractor
 
-# テストはパブリックとなっているメソッドのみテストしている。
+# テストはパブリックとなっているメソッドのみテストしています。
 class TranscriptExtractorTest(unittest.TestCase):
     def setUp(self):
         json_file = open("sample_for_transcript_extractor_test.json", "r")
