@@ -7,9 +7,9 @@ Python 3.9.6
 Install `requests` with pip.
 
 Example command
-````
-pip3 install requests
-```
+
+- pip3 install requests
+
 
 If pip is not installed, update to Python 3.4 or later.
 
@@ -47,7 +47,7 @@ Examples:
 音声認識の現状について教
 
 ---------------「あああ」の検索結果---------------
-```
+````
 
 If there are no hits in the search results, such as "あああ" in the above example, nothing will be displayed.
 
